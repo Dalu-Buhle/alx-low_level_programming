@@ -1,18 +1,23 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+
 /**
- * main - Entry point
+ *  main - Entry point
  *
- * Return: Always 0 (Success)
+ *  Description: print all single digit numbers
+ *
+ *  Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	 int i;
+	int digit = 0;
 
-	 for (i = 0; i < 10; i++)
- 		 printf("%d", i);
-		 printf("\n");
+	while (digit <= 9)
+	{
+		printf("%i", digit);
+		++digit;
+	}
+	printf("\n");
 
-	 return (0);
+	return (0);
 }
