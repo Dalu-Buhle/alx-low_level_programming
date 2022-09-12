@@ -1,20 +1,32 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+
 /**
  * main - Entry point
  *
+ * Description: print alphabet in lowercase then in uppercase
+ *
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-  char low;
+	char ch = 'a';
+	char CH = 'A';
 
-  for (low = 'a'; low <= 'z'; low++)
-    putchar(low);
-  for (low = 'A'; low <= 'Z'; low++)
-    putchar(low);
-  putchar('\n');
+	/*prints a - z*/
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		++ch;
+	}
 
-  return (0);
+	/*print A - Z*/
+	while (CH <= 'Z')
+	{
+		putchar(CH);
+		++CH;
+	}				
+	putchar('\n');
+
+	return (0);
 }
