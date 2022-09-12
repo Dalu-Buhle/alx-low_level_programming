@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: print all aplhabet letters except q and e
- ^
+ *
  * Return: Always 0 (Success)
  */
 
