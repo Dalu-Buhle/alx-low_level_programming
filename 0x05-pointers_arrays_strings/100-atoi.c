@@ -1,15 +1,25 @@
-#include "main.h"
-#include <stdio.h>
-
+#include <main.h>
 /**
- *_putchar - writes the character c to stdout
- * @c: The character to print
+ * _atoi - converts a string to an integer
  *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * @s: string input parameter
+ *
+ * Return: converted integer from string
  */
 
-int _putchar(char c)
+int _atoi(char *s)
 {
-	return (write(1, &c, 1));
+	unsigned int num = 0;
+	int sign = 1;
+
+	do {
+		if (*s == '-')
+			sign *= -1;
+		else if (*s >= '0' && *s <= '9')
+			num = (num * 10) + (*s - '0');
+		else if (num > 0)
+			break;
+	} while (*s++);
+
+	return (num * sign);
 }
