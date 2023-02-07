@@ -1,9 +1,9 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-int _putchar(char c);
-int _islower(int c);
-int _isalpha(int c);
+int __putchar(char c);
+int __islower(int c);
+int __isalpha(int c);
 int _abs(int n);
 int _isupper(int c);
 int _isdigit(int c);
@@ -23,3 +23,4 @@ char *_strpbrk(char *s, char *accept);
 char *_strstr(char *haystack, char *needle);
 
 #endif
+
